@@ -1,4 +1,5 @@
 .hero {
+  text-align: center;
   @media screen and (min-width:$mobile) {
     padding: 118px 0;
     margin: 0 auto;
@@ -26,11 +27,19 @@
   text-align: center;
 }
 .hero__title {
-  margin: 0 auto 30px;
-  max-width: 696px;
-  color: $primary-color;
+  @media screen and (min-width:$mobile) {
+    font-size: 26px;
+  line-height: 1.62;
+  max-width: 360px;
+}
+@media screen and (min-width:$desktop) {
   font-size: 44px;
-  font-weight: 900;
   line-height: 1.36;
+  max-width: 696px;
+}
+  margin: 0 auto 30px;
+  
+  color: $primary-color;
+  font-weight: 900;
   letter-spacing: 0.06em;
 }

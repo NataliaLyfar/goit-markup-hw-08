@@ -245,6 +245,7 @@ img {
 }
 
 .hero {
+  text-align: center;
   max-width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-image.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-image.jpg");
@@ -281,12 +282,25 @@ img {
 
 .hero__title {
   margin: 0 auto 30px;
-  max-width: 696px;
   color: #ffffff;
-  font-size: 44px;
   font-weight: 900;
-  line-height: 1.36;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .primary-button {
