@@ -1,0 +1,15 @@
+@mixin colored ($background-color, $color) {
+background-color: $background-color;
+color: $color;
+}
+@mixin bodered ($color) {
+border: 1px solid $color;
+}
+    
+@mixin decotation ($value) {
+text-decoration: $value;
+}
+@mixin transition ($property) {
+transition: $property $transition-duration $transition-timing-function;
+}
+    

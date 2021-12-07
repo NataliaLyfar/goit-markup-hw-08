@@ -1,0 +1,18 @@
+.logo {
+  @include decotation (none);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo--black {
+  color: $secondary-text-color;
+}
+.logo--white {
+  color: $primary-color;
+}
+.logo--blue {
+  color: $accent-color;
+}
+  

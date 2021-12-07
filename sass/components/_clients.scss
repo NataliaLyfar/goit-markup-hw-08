@@ -1,0 +1,32 @@
+
+.clients__list {
+display: flex;
+}
+.clients__item {
+flex-basis: calc(100% / 6);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.clients__link {
+  @include transition (color);
+  @include transition (border);
+  @include decotation (none);
+  @include bodered ($icon-color);
+  @extend %flex-center-style;
+  min-width: 170px;
+  min-height: 92px;
+  border-radius: 4px;
+  @include colored ($primary-color, $icon-color);
+  &:hover,
+  &:focus {
+    @include bodered ($accent-color);
+    color: $accent-color;
+  }
+}
+.clients__icon {
+  fill: currentColor;
+}
+  
+  
+  

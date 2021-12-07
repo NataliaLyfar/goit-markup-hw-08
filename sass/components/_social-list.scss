@@ -1,0 +1,26 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-link {
+  @include transition (color);
+  @include transition (background-color);
+  @extend %flex-center-style;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    @include colored ($accent-color, $primary-color);
+  }
+}
+.social-link__icon {
+  fill: currentColor;
+}
+.social-link--grey {
+  @include colored ($primary-color, $icon-color);
+}
+.social-link--white {
+  @include colored ($shadow2-color, $primary-color);
+}

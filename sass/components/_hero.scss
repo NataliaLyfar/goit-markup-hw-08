@@ -1,0 +1,36 @@
+.hero {
+  @media screen and (min-width:$mobile) {
+    padding: 118px 0;
+    margin: 0 auto;
+    width: $mobile;
+}
+@media screen and (min-width:$tablet) {
+  padding: 118px 60px;
+  margin: 0 auto;
+  width: $tablet;
+}
+@media screen and (min-width:$desktop) {
+  padding: 200px 0;
+  margin: 0 auto;
+  width: $desktop;
+}
+  
+  max-width: 100%;
+  background-image: linear-gradient($tertiary-shade-color,
+    $tertiary-shade-color),
+    url("../images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $tertiary-color;
+  text-align: center;
+}
+.hero__title {
+  margin: 0 auto 30px;
+  max-width: 696px;
+  color: $primary-color;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}

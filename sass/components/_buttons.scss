@@ -1,0 +1,76 @@
+.primary-button {
+  @include transition (background-color);
+  @include transition (color);
+    @include colored ($accent-color, $primary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    &:hover,
+  &:focus,
+  &:active {
+    @include colored ($accent-color, $primary-color);
+  }
+  }
+  
+  .primary-button__icon {
+    fill: currentColor;
+    margin-left: 10px;
+  }
+  .close-btn {
+    @include transition (color);
+    @include transition (border);
+    @include bodered (rgba(0, 0, 0, 0.1));
+    @extend %flex-center-style;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+  }
+  .close-btn__icon {
+    fill: currentColor;
+  }
+  .secondary-button {
+  @include transition (background-color);
+  @include transition (color);
+  @include transition (box-shadow);
+  @include colored ($primary-shade-color, $tertiary-text-color);
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    text-align: center;
+    &:focus,
+  &:hover,
+  &:active {
+    @include colored ($accent-color, $primary-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  }

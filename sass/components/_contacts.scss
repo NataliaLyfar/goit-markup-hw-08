@@ -1,0 +1,36 @@
+// Primary-contacts
+.primary-contacts {
+display: flex;
+margin-left: auto;
+}
+.primary-contacts__item {
+display: flex;
+&:first-child {
+margin-right: 30px;
+}
+}
+.primary-contacts__link {
+@extend %primary-style-link;
+@include decotation (none);
+color: inherit;
+display: flex;
+align-items: center;
+}
+.contact__icon {
+fill: currentColor;
+margin-right: 10px;
+}
+// Secondary-contacts
+.secondary-contacts__item {
+margin-top: 9px;
+&:first-child {
+margin-top: 20px;
+}
+}
+.secondary-contacts__link {
+@extend %secondary-style-link;
+@include decotation (none);
+}
+.secondary-contacts__link--white {
+color: $primary-color;
+}

@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  padding: 60px 0;
+  background-color: $secondary-color;
+  text-align: left;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.footer__social {
+  width: 206px;
+  margin-left: 70px;
+}
+.footer__title {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+  
