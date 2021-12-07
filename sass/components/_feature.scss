@@ -10,15 +10,33 @@
   
 }
 .feature__item {
-  flex-basis: calc (100% / 4);
+  @media screen and (min-width:$tablet) {
+    flex-basis: calc (100% / 2);
+  &:nth-child(even) {
+    margin-left: 30px;
+  }
+  &:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  }
+  @media screen and (min-width:$desktop) {
+    flex-basis: calc (100% / 4);
   &:not(:first-child) {
     margin-left: 30px;
   }
+  }
+  
 }
 .feature-icon__wrapper {
+  @media screen and (min-width:$tablet) {
+    min-width: 354px;
+  }
+  @media screen and (min-width:$desktop) {
+    min-width: 270px;
+  }
   @extend %flex-center-style;
   background-color: $primary-shade-color;
-  min-width: 270px;
+  
   min-height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;

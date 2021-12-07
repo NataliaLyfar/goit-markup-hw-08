@@ -1,12 +1,48 @@
 
 .clients__list {
-display: flex;
+  @media screen and (min-width:$mobile) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width:$tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width:$desktop) {
+    display: flex;
+  }
 }
 .clients__item {
-flex-basis: calc(100% / 6);
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width:$mobile) {
+    flex-basis: calc(100% / 2);
+    &:nth-child(even) {
+      margin-left: 30px;
+    }
+    &:nth-child(-n+4) {
+      margin-bottom: 30px;
+    }
   }
+  @media screen and (min-width:$tablet) {
+    flex-basis: calc(100% / 3);
+    &:nth-child(2) {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    &:nth-child(5) {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    &:nth-child(-n+3) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width:$desktop) {
+    flex-basis: calc(100% / 6);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
 }
 .clients__link {
   @include transition (color);
@@ -14,7 +50,15 @@ flex-basis: calc(100% / 6);
   @include decotation (none);
   @include bodered ($icon-color);
   @extend %flex-center-style;
-  min-width: 170px;
+  @media screen and (min-width:$mobile) {
+    min-width: 210px;
+  }
+  @media screen and (min-width:$tablet) {
+    min-width: 226px;
+  }
+  @media screen and (min-width:$desktop) {
+    min-width: 170px;
+  }
   min-height: 92px;
   border-radius: 4px;
   @include colored ($primary-color, $icon-color);
