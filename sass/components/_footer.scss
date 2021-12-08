@@ -1,16 +1,28 @@
 .footer {
-  display: flex;
   padding: 60px 0;
   background-color: $secondary-color;
-  text-align: left;
+  text-align: center;
+  @media screen and (min-width:$desktop) {
+    text-align: left;
+  }
 }
 .footer__container {
-  display: flex;
   align-items: baseline;
+  @media screen and (min-width:$tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width:$desktop) {
+    justify-content: space-between;
+  }
 }
 .footer__social {
   width: 206px;
-  margin-left: 70px;
+  margin: 60px auto;
+  @media screen and (min-width:$tablet) {
+    margin: 0;
+  }
 }
 .footer__title {
   margin-bottom: 20px;
@@ -19,9 +31,12 @@
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: left;
   text-transform: uppercase;
   color: $primary-color;
+    text-align: center;
+  @media screen and (min-width:$desktop) {
+    text-align: left;
+  }
 }
 
   

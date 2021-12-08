@@ -7,8 +7,7 @@
   }
   @media screen and (min-width:$desktop) {
     display: flex;
-  }
-  
+  } 
 }
 .feature__item {
   @media screen and (max-width: 767px) {
@@ -17,16 +16,12 @@
   }
 }
   @media screen and (min-width:$tablet) {
-    flex-basis: calc ((100% - 2 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
   margin: 15px;
   }
   @media screen and (min-width:$desktop) {
-    flex-basis: calc ((100% - 4 * 30px) / 4);
-  &:not(:first-child) {
-    margin-left: 30px;
+    flex-basis: calc((100% - 4 * 30px) / 4);
   }
-  }
-  
 }
 .feature-icon__wrapper {
   @extend %flex-center-style;
@@ -41,7 +36,7 @@
     width: 270px;
   }
 }
-  
+ 
 .feature__subtitle {
   margin-bottom: 10px;
   color: $tertiary-text-color;
@@ -49,7 +44,12 @@
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
+  @media screen and (min-width:$tablet) {
+    text-align: left;
+  }
 }
+
 .feature__text {
   font-size: 14px;
   line-height: 1.71;

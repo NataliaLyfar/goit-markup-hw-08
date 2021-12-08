@@ -1,15 +1,18 @@
 .subscribe {
-  margin-left: auto;
+  @media screen and (min-width:$tablet) {
+    margin-top: 60px;
+  }
 }
 .subscribe__form {
-  display: flex;
+  @media screen and (min-width:$desktop) {
+    display: flex;
+  }
 }
 .subscribe__input {
   @include transition (border);
   @include bodered (rgba(255, 255, 255, 0.3));
-  margin-right: 12px;
-
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border-radius: 4px;
@@ -22,5 +25,12 @@
   &:focus {
   @include bodered ($accent-color);
   outline: 0;
+  }
+  @media screen and (min-width:$tablet) {
+    width: 450px;
+  }
+  @media screen and (min-width:$desktop) {
+    margin: 0 12px 0 0;
+    width: 358px;
   }
 }

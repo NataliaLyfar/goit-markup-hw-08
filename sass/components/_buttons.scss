@@ -2,9 +2,8 @@
   @include transition (background-color);
   @include transition (color);
     @include colored ($accent-color, $primary-color);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center-style;
+    margin: 0 auto;
     min-width: 200px;
     height: 50px;
     text-align: center;
