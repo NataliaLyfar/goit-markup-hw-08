@@ -25,11 +25,30 @@
     <!--Хедер-->
     <header class="header">
       <div class="container header__nav">
-        <a href="./index.html" class="logo logo--black"
+        <nav class="nav">
+          <a href="./index.html" class="logo logo--black"
           ><span class="logo logo--blue" lang="en">Web</span>Studio</a
         >
-        <nav>
-          <ul class="nav">
+        <button type="button" class="menu__button is-open" aria-expanded="false"
+        aria-controls="menu__container"
+        data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню"><use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="menu__container">
+          <ul class="menu__nav">
+          <li class="menu__item">
+            <a href="./index.html" class="nav__link nav__link--current">Студия</a>
+          </li>
+          <li class="nav__item">
+            <a href="./portfolio.html" class="header__link nav__link">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Контакты</a>
+          </li>
+        </ul></div>
+          <ul class="nav__list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link nav__link--current">Студия</a>
             </li>
@@ -563,5 +582,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-button.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

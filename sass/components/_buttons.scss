@@ -17,7 +17,6 @@
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    text-align: center;
     &:hover,
   &:focus,
   &:active {
@@ -29,6 +28,7 @@
     fill: currentColor;
     margin-left: 10px;
   }
+  
   .close-btn {
     @include transition (color);
     @include transition (border);

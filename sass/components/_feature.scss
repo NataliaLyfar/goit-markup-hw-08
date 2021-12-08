@@ -5,9 +5,6 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media screen and (min-width:$desktop) {
-    display: flex;
-  } 
 }
 .feature__item {
   @media screen and (max-width: 767px) {
@@ -29,12 +26,6 @@
   min-height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  @media screen and (min-width:$tablet) {
-    width: 354px;
-  }
-  @media screen and (min-width:$desktop) {
-    width: 270px;
-  }
 }
  
 .feature__subtitle {

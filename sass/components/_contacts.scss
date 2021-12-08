@@ -1,17 +1,20 @@
 // Primary-contacts
 .primary-contacts {
+    @media screen and (max-width:767px) {
+        display: none;
+      }
+    margin-left: auto;
     @media screen and (min-width:$desktop) {
         display: flex;
         align-items: center;
     }
-margin-left: auto;
 }
 .primary-contacts__item {
 display: flex;
 @media screen and (min-width:$tablet) {
     &:first-child {
         margin-bottom: 10px;
-        }
+    }
 }
 @media screen and (min-width:$desktop) {
 &:first-child {
