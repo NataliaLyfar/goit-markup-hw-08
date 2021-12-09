@@ -2,6 +2,9 @@ body {
   color: $primary-text-color;
   background-color: $primary-color;
   font-family: Roboto, sans-serif;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 ul {

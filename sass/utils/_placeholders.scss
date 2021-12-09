@@ -1,9 +1,8 @@
 %primary-style-link { 
 @include transition (color);
-
-font-size: 14px;
+@include decotation (none);
 font-weight: 500;
-line-height: 1.14;
+line-height: 1.17;
 letter-spacing: 0.02em;
 &:hover, &:focus, &:active {
 color: $accent-color;
