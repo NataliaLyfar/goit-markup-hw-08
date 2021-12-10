@@ -54,7 +54,6 @@
   @include transition (color);
   @include transition (box-shadow);
   @include colored ($primary-shade-color, $tertiary-text-color);
-    display: inline-block;
     padding: 6px 22px;
     border-radius: 4px;
     border: 0;

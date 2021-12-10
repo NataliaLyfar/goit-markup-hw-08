@@ -4,24 +4,24 @@
 margin-top: 302px;
 }
 @media screen and (min-width:$desktop) {
+    flex-direction: row-reverse;
     display: flex;
     align-items: center;
     }
 }
 .primary-contacts__item {
-    &:first-child  {
-    margin-bottom: 32px;
+&:last-child  {
+ margin-top: 32px;
 }
 @media screen and (min-width:$tablet) {
-    display: flex;
-    &:first-child {
-        margin-bottom: 10px;
+    &:last-child {
+        margin-top: 10px;
     }
 }
 @media screen and (min-width:$desktop) {
-&:first-child {
+&:last-child {
 margin-right: 30px;
-margin-bottom: 0;
+margin-top: 0;
 }
 }
 }
@@ -32,7 +32,7 @@ font-size: 24px;
 @media screen and (min-width:$tablet) {
 display: flex;
 align-items: center;
-    font-size: 12px;
+font-size: 12px;
 }
 @media screen and (min-width:$desktop) {
 font-size: 14px;

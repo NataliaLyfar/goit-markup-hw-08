@@ -1,42 +1,45 @@
 .menu__button {
     @include transition (color);
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
     z-index: 1;
-    display: inline-flex;
-
     padding: 0;
     border: none;
     background-color: transparent;
     &.is-open .icon-cross {
-        display: block;
+    display: block;
     }
     &.is-open .icon-menu {
-        display: none;
+    display: none;
+    }
+    & .icon-cross {
+    display: none;
     }
     &:hover,
     &:focus {
-      color: $accent-color;}
+      color: $accent-color;
+    }
     @media screen and (min-width:$tablet) {
     display: none;
     }
   }
-.menu__button .icon-cross {
-    display: none;
-}
+
 .menu__container {
     @media screen and (max-width:767px) {
-    display: none;
-    position: absolute;
+    @include transition (transform);
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vh;
+    height: 100vh;
     padding: 48px 40px;
     text-align: left;
     background-color: $primary-color;
+    transform: translateX(100%);
     &.is-open {
     display: block;
+    transform: translateX(0);
     }
     }
     @media screen and (min-width:$tablet) {
@@ -45,3 +48,23 @@
     }
 }
 
+.menu__social {
+@media screen and (max-width:767px) {
+margin: 64px -10px 0;
+display: flex;
+} 
+@media screen and (min-width:$tablet) {
+display: none;
+}
+}
+.menu-social__item {
+&:not(:last-child) {
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+}
+.menu-social__link {
+@extend %primary-style-link;
+font-size: 18px;
+color: $accent-color;
+    padding: 0 10px; 
+}

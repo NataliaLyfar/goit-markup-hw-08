@@ -25,7 +25,6 @@
     top: 50%;
     left: 50%;
     width: 450px;
-    height: 609px;
     padding: 40px;
     text-align: center;
     background-color: $primary-color;
@@ -34,7 +33,6 @@
     border-radius: 4px;
     @media screen and (min-width:$desktop) {
     width: 528px;
-    height: 580px;
     }
   }
   .modal__close-btn {

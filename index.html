@@ -28,14 +28,13 @@
           <a href="./index.html" class="logo logo--black"
           ><span class="logo logo--blue" lang="en">Web</span>Studio</a
         >
-        <button type="button" class="menu__button is-open" aria-expanded="false"
-        aria-controls="menu-container"
-        data-menu-button>
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню"><use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
-            <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+        <button type="button" class="menu__button" data-mobile-btn aria-expanded="false"
+        aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню"><use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use><use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
           </svg>
         </button>
-        <div class="menu__container is-open" id="menu-container" data-menu> 
+        <div class="menu__container js-menu-container" id="mobile-menu"> 
           <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -65,6 +64,12 @@
               info@devstudio.com</a
             >
           </li>
+        </ul>
+        <ul class="menu__social">
+<li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
+<li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
+<li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
+<li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
         </ul>
       </div>
       </div>
@@ -572,7 +577,13 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu-button.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/mobile-menu.js"></script>
+    
   </body>
 </html>

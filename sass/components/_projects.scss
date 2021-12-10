@@ -1,5 +1,14 @@
 
 .projects {
+  margin-top: 40px;
+  @media screen and (min-width:$tablet) {
+    margin-top: 30px;
+    }
+    @media screen and (min-width:$desktop) {
+      margin-top: 50px;
+      }
+}
+.projects__list {
   @media screen and (min-width:$tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -31,6 +40,7 @@
   }
 }
 .projects__thumb {
+  z-index: -1;
   position: relative;
   overflow: hidden;
 }

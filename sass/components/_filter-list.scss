@@ -2,23 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 40px;
+  margin: -8px;
   @media screen and (min-width:$tablet) {
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
   }
-  @media screen and (min-width:$desktop) {
-    margin-bottom: 50px;
-    }
 }
-.filter__items:not(:last-child) {
-  margin-right: 8px;
-}
+
 .filter__items {
-  @media screen and (max-width: 767px) {
-    &:nth-last-child(-n+2) {
-      margin-top: 15px;
-    }
-  }
+  margin: 8px;
+  &:not(:last-child) {
+    margin-right: 0;
+  } 
 }
