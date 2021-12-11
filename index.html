@@ -51,15 +51,15 @@
         <ul class="primary-contacts">
           <li class="primary-contacts__item">
             <a href="tel:+380961111111" class="primary-contacts__link link--tel"
-              ><svg class="contact__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
+              ><svg class="contact__icon icon--tel">
+                <use class="icon--tablet" href="./images/symbol-defs.svg#icon-smartphone-tablet"></use><use class="icon--desktop" href="./images/symbol-defs.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
           <li class="primary-contacts__item">
             <a href="mailto:info@devstudio.com" class="primary-contacts__link"
-              ><svg class="contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              ><svg class="contact__icon icon--email">
+                <use class="icon--tablet" href="./images/symbol-defs.svg#icon-envelope-tablet"></use><use class="icon--desktop" href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -148,7 +148,8 @@
             <li class="review__item">
               <div class="review__thumb">
                 <img
-                  src="./images/img1.jpg"
+                srcset="./images/review-desktop-app.jpg 1x, ./images/review-desktop-app@2x.jpg 2x"
+                src="./images/review-desktop-app.jpg"
                   alt="Вёрстка сайта"
                   width="370"
                   height="294"
@@ -161,7 +162,8 @@
             <li class="review__item">
               <div class="review__thumb">
                 <img
-                  src="./images/img2.jpg"
+                srcset="./images/review-mobile-app.jpg 1x, ./images/review-mobile-app@2x.jpg 2x"
+                src="./images/review-mobile-app.jpg"
                   alt="Создание приложения для телефона"
                   width="370"
                   height="294"
@@ -174,7 +176,8 @@
             <li class="review__item">
               <div class="review__thumb">
                 <img
-                  src="./images/img3.jpg"
+                srcset="./images/review-design.jpg 1x, ./images/review-design@2x.jpg 2x"
+                src="./images/review-design.jpg"
                   alt="Процесс вебдизайна"
                   width="370"
                   height="294"
@@ -194,16 +197,16 @@
           <ul class="team__list">
             <li class="team__item">
               <img
-                src="./images/igor-demyanenko.jpg"
+              srcset="./images/teammate-ihor-demyanenko.jpg 1x, ./images/teammate-ihor-demyanenko@2x.jpg 2x"
+                src="./images/teammate-ihor-demyanenko.jpg"
                 alt="Фото Игоря Демьяненко"
-                width="270"
-                height="260"
+                width="450"
               />
               <div class="teammate">
                 <h3 class="teammate__title">Игорь Демьяненко</h3>
                 <p class="teammate__position" lang="en">Product Designer</p>
-                <ul class="team__social-list social-list">
-                  <li>
+                <ul class="social-list">
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -211,7 +214,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -219,7 +222,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -227,7 +230,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -240,16 +243,16 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/olga-repina.jpg"
+              srcset="./images/teammate-olga-repina.jpg 1x, ./images/teammate-olga-repina@2x.jpg 2x"
+              src="./images/teammate-olga-repina.jpg"
                 alt="Фото Ольги Репиной"
-                width="270"
-                height="260"
+                width="450"
               />
               <div class="teammate">
                 <h3 class="teammate__title">Ольга Репина</h3>
                 <p class="teammate__position" lang="en">Frontend Developer</p>
-                <ul class="team__social-list social-list">
-                  <li>
+                <ul class="social-list">
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -257,7 +260,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -265,7 +268,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -273,7 +276,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -286,16 +289,16 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/nickolay-tarasov.jpg"
+              srcset="./images/teammate-nickolay-tarasov.jpg 1x, ./images/teammate-nickolay-tarasov@2x.jpg 2x"
+              src="./images/teammate-nickolay-tarasov.jpg"
                 alt="Фото Николая Тарасова"
-                width="270"
-                height="260"
+                width="450"
               />
               <div class="teammate">
                 <h3 class="teammate__title">Николай Тарасов</h3>
                 <p class="teammate__position" lang="en">Marketing</p>
-                <ul class="team__social-list social-list">
-                  <li>
+                <ul class="social-list">
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -303,7 +306,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -311,7 +314,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -319,7 +322,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -332,16 +335,16 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/michail-ermakov.jpg"
+              srcset="./images/teammate-michail-ermakov.jpg 1x, ./images/teammate-michail-ermakov@2x.jpg 2x"
+              src="./images/teammate-michail-ermakov.jpg"
                 alt="Фото Михаила Ермакова"
-                width="270"
-                height="260"
+                width="450"
               />
               <div class="teammate">
                 <h3 class="teammate__title">Михаил Ермаков</h3>
                 <p class="teammate__position" lang="en">UI Designer</p>
-                <ul class="team__social-list social-list">
-                  <li>
+                <ul class="social-list">
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -349,7 +352,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -357,7 +360,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -365,7 +368,7 @@
                         ></use></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="social-item">
                     <a href="" class="social-link social-link--grey"
                       ><svg class="social-link__icon" width="20" height="20">
                         <use
@@ -459,7 +462,7 @@
         <div class="footer__social">
           <p class="footer__title">присоединяйтесь</p>
           <ul class="social-list">
-            <li>
+            <li class="social-item">
               <a href="" class="social-link social-link--white"
                 ><svg class="social-link__icon" width="20" height="20">
                   <use
@@ -467,19 +470,19 @@
                   ></use></svg
               ></a>
             </li>
-            <li>
+            <li class="social-item">
               <a href="" class="social-link social-link--white"
                 ><svg class="social-link__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="social-item">
               <a href="" class="social-link social-link--white"
                 ><svg class="social-link__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="social-item">
               <a href="" class="social-link social-link--white"
                 ><svg class="social-link__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg

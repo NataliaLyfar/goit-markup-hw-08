@@ -1,7 +1,9 @@
 .social-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-center-style;
+  margin: -5px;
+}
+.social-item {
+  margin: 5px;
 }
 .social-link {
   @include transition (color);

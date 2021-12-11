@@ -21,18 +21,24 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width:$tablet) and (max-width:1199px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-  }
+    &:nth-child(-n+2) .projects__meta {
+      height: 146px;
+    }
+    }
+
   @media screen and (min-width:$desktop) {
   flex-basis: calc((100% - 3 * 30px) / 3);
+  margin: 15px;
   }
 }
 .projects__link {
   @include transition (box-shadow);
   @include decotation (none); 
   display: block;
+  flex-grow: 1;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -76,6 +82,7 @@
   border-left: 1px solid $border2-color;
   background-color: $primary-color;
 }
+
 .projects__title {
   margin-bottom: 4px;
   color: $tertiary-text-color;
@@ -83,6 +90,7 @@
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  
 }
 .projects__text {
   color: $primary-text-color;
@@ -91,4 +99,3 @@
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-  

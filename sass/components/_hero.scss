@@ -2,54 +2,47 @@
   text-align: center;
   padding: 118px 0;
   margin: 0 auto;
-@media screen and (min-width:$desktop) {
-  padding: 200px 0;
-}
+  @media screen and (min-width:$desktop) {
+    padding: 200px 0;}
   max-width: 1600px;
-  background-image: linear-gradient($tertiary-shade-color,
-    $tertiary-shade-color),
-    url("../images/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: $tertiary-color;
-}
+  
+  background-image: linear-gradient($tertiary-shade-color,
+    $tertiary-shade-color),
+    url("../images/hero-mobile.jpg");
   @media (min-resolution: 2dppx) {
-    .hero {
     background-image: linear-gradient($tertiary-shade-color,
     $tertiary-shade-color), url("../images/hero-mobile2x.jpg");
   }
-}
 
-  @media screen and (min-width: 481px) {
-    .hero {
+  @media (min-width:481px) {
     background-image: linear-gradient($tertiary-shade-color,
-    $tertiary-shade-color), url("../images/hero-tablet.jpg");}
+    $tertiary-shade-color), url("../images/hero-tablet.jpg");
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) { 
+background-image: linear-gradient($tertiary-shade-color,
+ $tertiary-shade-color), url("../images/hero-tablet@2x.jpg");
+}
+}  
+  @media (min-width:769px) {
+    background-image: linear-gradient($tertiary-shade-color,
+    $tertiary-shade-color), url("../images/hero-desktop.jpg");
     @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) { 
-    .hero {
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)  {
       background-image: linear-gradient($tertiary-shade-color,
-      $tertiary-shade-color), url("../images/hero-tablet2x.jpg");
+      $tertiary-shade-color), url("../images/hero-desktop@2x.jpg");
     }
-  }
+}
 }
 
-    @media screen and (min-width: 769px) {
-      .hero {
-      background-image: linear-gradient($tertiary-shade-color,
-      $tertiary-shade-color), url("../images/hero-desktop.jpg");}
-      @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx)  {
-    .hero {
-        background-image: linear-gradient($tertiary-shade-color,
-        $tertiary-shade-color), url("../images/hero-desktop2x.jpg");
-      }
-  }
-    }
+
 .hero__title {
   font-size: 26px;
   line-height: 1.62;

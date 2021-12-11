@@ -52,15 +52,15 @@
         <ul class="primary-contacts">
           <li class="primary-contacts__item">
             <a href="tel:+380961111111" class="primary-contacts__link link--tel"
-              ><svg class="contact__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
+              ><svg class="contact__icon icon--tel">
+                <use class="icon--tablet" href="./images/symbol-defs.svg#icon-smartphone-tablet"></use><use class="icon--desktop" href="./images/symbol-defs.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
           <li class="primary-contacts__item">
             <a href="mailto:info@devstudio.com" class="primary-contacts__link"
-              ><svg class="contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              ><svg class="contact__icon icon--email">
+                <use class="icon--tablet" href="./images/symbol-defs.svg#icon-envelope-tablet"></use><use class="icon--desktop" href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -105,10 +105,10 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <img
-                    src="./images/tehnochryak.jpg"
+                  srcset="./images/project-technochryack.jpg 1x, ./images/project-technochryack@2x.jpg 2x"
+                  src="./images/project-technochryack.jpg"
                     alt="Веб-сайт"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
                   <div class="projects__overlay">
                     <p class="projects__description">
@@ -129,10 +129,10 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <img
-                    src="./images/basketball.jpg"
+                  srcset="./images/project-poster.jpg 1x, ./images/project-poster@2x.jpg 2x"
+                  src="./images/project-poster.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
                   <div class="projects__overlay">
                     <p class="projects__description">
@@ -145,7 +145,7 @@
                 </div>
                 <div class="projects__meta">
                   <h3 class="projects__title">
-                    Постер New Orlean vs Golden Star
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h3>
                   <p class="projects__text">Дизайн</p>
                 </div>
@@ -155,10 +155,10 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <img
-                    src="./images/restaurant-seafood.jpg"
+                  srcset="./images/project-restaurant.jpg 1x, ./images/project-restaurant@2x.jpg 2x"
+                  src="./images/project-restaurant.jpg"
                     alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
                   <div class="projects__overlay">
                     <p class="projects__description">
@@ -181,10 +181,10 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <img
-                    src="./images/headphones-prima.jpg"
+                  srcset="./images/project-prime.jpg 1x, ./images/project-prime@2x.jpg 2x"
+                  src="./images/project-prime.jpg"
                     alt="Наушники"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
                   <div class="projects__overlay">
                     <p class="projects__description">
@@ -207,10 +207,10 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <img
-                    src="./images/boxes.jpg"
+                  srcset="./images/project-boxes.jpg 1x, ./images/project-boxes@2x.jpg 2x"
+                  src="./images/project-boxes.jpg"
                     alt="Коробки"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
                   <div class="projects__overlay">
                     <p class="projects__description">
@@ -233,10 +233,10 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <img
-                    src="./images/computer.jpg"
+                  srcset="./images/project-inspiration.jpg 1x, ./images/project-inspiration@2x.jpg 2x"
+                  src="./images/project-inspiration.jpg"
                     alt="Компьютер"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
                   <div class="projects__overlay">
                     <p class="projects__description">
@@ -259,10 +259,10 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <img
-                    src="./images/magazin.jpg"
+                  srcset="./images/project-magazine.jpg 1x, ./images/project-magazine@2x.jpg 2x"
+                  src="./images/project-magazine.jpg"
                     alt="Журнал"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
                   <div class="projects__overlay">
                     <p class="projects__description">
@@ -285,10 +285,10 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <img
-                    src="./images/label-lab.jpg"
+                  srcset="./images/project-lab.jpg 1x, ./images/project-lab@2x.jpg 2x"
+                  src="./images/project-lab.jpg"
                     alt="Лейбл"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
                   <div class="projects__overlay">
                     <p class="projects__description">
@@ -311,10 +311,10 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <img
-                    src="./images/notebook.jpg"
+                  srcset="./images/project-growing-business.jpg 1x, ./images/project-growing-business@2x.jpg 2x"
+                  src="./images/project-growing-business.jpg"
                     alt="Ноутбук"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
                   <div class="projects__overlay">
                     <p class="projects__description">
@@ -373,7 +373,7 @@
         <div class="footer__social">
           <p class="footer__title">присоединяйтесь</p>
           <ul class="social-list">
-            <li>
+            <li class="social-item">
               <a href="" class="social-link social-link--white"
                 ><svg class="social-link__icon" width="20" height="20">
                   <use
@@ -381,19 +381,19 @@
                   ></use></svg
               ></a>
             </li>
-            <li>
+            <li class="social-item">
               <a href="" class="social-link social-link--white"
                 ><svg class="social-link__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="social-item">
               <a href="" class="social-link social-link--white"
                 ><svg class="social-link__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="social-item">
               <a href="" class="social-link social-link--white"
                 ><svg class="social-link__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
