@@ -19,9 +19,8 @@
 }
 .footer__social {
   width: 206px;
-  margin: 60px auto;
-  @media screen and (min-width:$tablet) {
-    margin: 0;
+  @media screen and (max-width:767px) {
+    margin: 60px auto 0;
   }
 }
 .footer__title {

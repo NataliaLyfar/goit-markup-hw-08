@@ -1,4 +1,32 @@
+.menu__button {
+  @include transition (color);
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 1;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  &.is-open .icon-cross {
+  display: block;
+  }
+  &.is-open .icon-menu {
+  display: none;
+  }
+  & .icon-cross {
+  display: none;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  @media screen and (min-width:$tablet) {
+  display: none;
+  }
+}
+
 .primary-button {
+  @extend %button-base-style;
   @include transition (background-color);
   @include transition (color);
     @include colored ($accent-color, $primary-color);
@@ -6,20 +34,14 @@
     margin: 0 auto;
     min-width: 200px;
     height: 50px;
-    text-align: center;
     padding: 0;
-    border: 0;
-    border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
     &:hover,
-  &:focus,
-  &:active {
+    &:focus,
+    &:active {
     @include colored ($accent-color, $primary-color);
   }
   }
@@ -41,7 +63,7 @@
     background-color: transparent;
     cursor: pointer;
     &:hover,
-  &:focus {
+    &:focus {
     color: $accent-color;
     border: 1px solid $accent-color;
   }
@@ -50,23 +72,18 @@
     fill: currentColor;
   }
   .secondary-button {
+  @extend %button-base-style;
   @include transition (background-color);
   @include transition (color);
   @include transition (box-shadow);
   @include colored ($primary-shade-color, $tertiary-text-color);
     padding: 6px 22px;
-    border-radius: 4px;
-    border: 0;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 16px;
     font-weight: 500;
     line-height: 1.63;
     letter-spacing: 0.03em;
-    text-align: center;
     &:focus,
-  &:hover,
-  &:active {
+    &:hover,
+    &:active {
     @include colored ($accent-color, $primary-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
