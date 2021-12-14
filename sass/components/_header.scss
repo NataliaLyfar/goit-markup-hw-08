@@ -2,14 +2,10 @@
 border-bottom: 1px solid $border-color;
 @media screen and (max-width:767px) {
 position: fixed;
-padding: 16px 0;
 top: 0;
 left: 0;
 width: 100%;
-background-color: $primary-color;
-}
-@media screen and (min-width:$tablet) {
-padding: 25px 0;    
+background-color: $primary-color;   
 }
 }
 .header__nav {

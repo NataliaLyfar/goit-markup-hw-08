@@ -1,6 +1,7 @@
 %primary-style-link { 
 @include transition (color);
 @include decotation (none);
+display: block;
 font-weight: 500;
 line-height: 1.17;
 letter-spacing: 0.02em;
