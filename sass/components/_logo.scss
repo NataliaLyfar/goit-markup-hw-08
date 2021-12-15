@@ -12,6 +12,10 @@
 }
 .logo--black {
   color: $secondary-text-color;
+  padding: 16px 0;
+  @media screen and (min-width:$tablet) {
+  padding: 26px 0;
+}
 }
 .logo--white {
   color: $primary-color;

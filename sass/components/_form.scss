@@ -9,7 +9,7 @@
 .form__input {
   @include transition (color);
   @include transition (border);
-  @include bodered (rgba(33, 33, 33, 0.2));
+  @include bodered (rgba($tertiary-text-color, 0.2));
   margin: 0;
   width: 100%;
   height: 40px;
@@ -47,14 +47,14 @@
 .form__textarea {
   @include transition (color);
   @include transition (border);
-  @include bodered (rgba(33, 33, 33, 0.2));
+  @include bodered (rgba($tertiary-text-color, 0.2));
   width: 100%;
   height: 120px;
   padding: 12px 16px;
   border-radius: 4px;
   resize: none;
   &::placeholder {
-    color: rgba(117, 117, 117, 0.5);
+    color: rgba($primary-text-color, 0.5);
     font-size: 12px;
     line-height: 1.17;
     text-align: left;
@@ -77,8 +77,6 @@
 }
 .checkbox__input {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   position: absolute;
 }
 .checkbox__label {
@@ -95,17 +93,19 @@
 .checkbox__icon {
   @include transition (background-image);
   @include transition (background-color);
+  @include transition (border-color);
   display: inline-block;
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  background-image: url(../images/checkbox.svg);
+  border: 2px solid $tertiary-text-color;
   border-radius: 2px;
-  background-size: contain;
+  
 }
 .checkbox__input:checked + .checkbox__icon {
   background-image: url(../images/icon-check.svg);
   background-color: $accent-color;
+  border-color: $accent-color;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

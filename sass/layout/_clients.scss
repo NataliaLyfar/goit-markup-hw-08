@@ -7,14 +7,12 @@
 }
 .clients__item {
   margin: 15px;
-  @media screen and (max-width:767px) {
-    flex-basis: calc((100% - 2 * 30px) / 2);
-  }
+  flex-basis: calc((100% - 2 * 30px) / 2);
   @media screen and (min-width:$tablet) {
-    flex-basis: calc((100% - 3 * 30px) / 3);
+  flex-basis: calc((100% - 3 * 30px) / 3);
   }
   @media screen and (min-width:$desktop) {
-    flex-basis: calc((100% - 6 * 30px) / 6);
+  flex-basis: calc((100% - 6 * 30px) / 6);
   }
 }
 .clients__link {

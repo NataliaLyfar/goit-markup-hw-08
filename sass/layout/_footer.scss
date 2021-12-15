@@ -18,9 +18,8 @@
   }
 }
 .footer__social {
-  width: 206px;
   @media screen and (max-width:767px) {
-    margin: 60px auto 0;
+  margin: 60px auto 0;
   }
 }
 .footer__title {
@@ -32,9 +31,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-color;
-    text-align: center;
+  text-align: center;
   @media screen and (min-width:$desktop) {
-    text-align: left;
+  text-align: left;
   }
 }
 

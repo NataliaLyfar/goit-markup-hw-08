@@ -4,26 +4,28 @@
 
 @import "./components/container";
 @import "./components/commonstyle";
-@import "./components/header";
 @import "./components/logo";
 @import "./components/navigation";
-@import "./components/mobile-menu";
 @import "./components/contacts";
-@import "./components/hero";
 @import "./components/buttons";
 @import "./components/section";
-@import "./components/feature";
-@import "./components/review";
-@import "./components/team";
 @import "./components/social-list";
-@import "./components/clients";
-@import "./components/footer";
 @import "./components/subscribe";
-@import "./components/backdrop&modal";
 @import "./components/form";
 @import "./components/links";
-@import "./components/projects";
 @import "./components/filter-list";
+
+@import "./layout/header";
+@import "./layout/mobile-menu";
+@import "./layout/hero";
+@import "./layout/feature";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/review";
+@import "./layout/footer";
+@import "./layout/projects";
+@import "./layout/backdrop&modal";
+
 
 
 

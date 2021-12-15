@@ -1,8 +1,9 @@
 .review {
-  @media screen and (max-width: 1199px) {
   display: none;
-  }
+  @media screen and (min-width:$desktop) {
+  display: block;
   padding-bottom: 94px;
+  }
 }
 .review__list {
   display: flex;
@@ -23,7 +24,7 @@ flex-basis: calc((100% - 3 * 30px) / 3);
   bottom: 0;
   width: 100%;
   height: 70px;
-  background-color: $tertiary-shade2-color;
+  background-color: rgba($secondary-color, 0.8);
 }
 .review__description {
   font-weight: 700;

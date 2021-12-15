@@ -1,16 +1,15 @@
 // Primary-contacts
 .connect {
-    @media screen and (max-width:767px) {
-    margin-top: auto;
-    } 
-    @media screen and (min-width:$tablet) {
-        margin-left: auto;
+margin-top: auto;
+@media screen and (min-width:$tablet) {
+margin-top: 0;
+margin-left: auto;
+}
 }
 .primary-contacts {
-@media screen and (max-width:767px) {
 margin-bottom: 64px;
-}
 @media screen and (min-width:$tablet) {
+margin-bottom: 0;
 display: flex;
 flex-direction: column-reverse;
 }
@@ -20,19 +19,18 @@ align-items: center;
 }
 }
 .primary-contacts__item {
-@media screen and (max-width:767px) {
 &:first-child  {
  margin-bottom: 32px;
 }
-}
-@media screen and (min-width:$tablet) and (max-width:1199px) {
+@media screen and (min-width:$tablet) {
 &:first-child {
 margin-top: 10px;
+margin-bottom: 0;
 }
 }
 @media screen and (min-width:$desktop) {
-&:last-child {
-margin-right: 30px;
+&:first-child {
+margin: 0 0 0 30px;
 }
 }
 }
@@ -55,24 +53,23 @@ font-size: 34px;
 color: $accent-color;
 }
 }
-.contact__icon {
-@media screen and (max-width:767px) {   
+.contact__icon {  
 display: none;
-}
 @media screen and (min-width:$tablet) {
+display: block;
 fill: currentColor;
 margin-right: 10px;
 }
 @media screen and (max-width:1199px) {
-&.icon--desktop {
+&.contact__icon--desktop {
 display: none;}
 }
 @media screen and (min-width:$desktop) {
-&.icon--tablet {
+&.contact__icon--tablet {
 display: none;}
 }
 }
-.icon--tel {
+.contact__icon--tel {
 @media screen and (min-width:$tablet) {
 width: 10px;
 height: 14px;
@@ -82,7 +79,7 @@ width: 10px;
 height: 16px;
 }
 }
-.icon--email {
+.contact__icon--email {
 @media screen and (min-width:$tablet) {
 width: 14px;
 height: 10px;

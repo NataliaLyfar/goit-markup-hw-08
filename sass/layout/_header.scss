@@ -1,16 +1,13 @@
 .header {
 border-bottom: 1px solid $border-color;
-@media screen and (max-width:767px) {
 position: fixed;
 top: 0;
 left: 0;
 width: 100%;
-background-color: $primary-color;   
-}
+background-color: $primary-color; 
 }
 .header__nav {
 display: flex;
-align-items: center;
 }
 
   
