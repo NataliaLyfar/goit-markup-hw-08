@@ -43,15 +43,12 @@
     right: 8px;
   }
   .modal__title {
+    @include font (20px, 700, 1.5, 0.03em);
     color: $tertiary-text-color;
     margin-bottom: 12px;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
     text-align: center;
     @media screen and (min-width:$desktop) {
-    line-height: 1.15; 
+      @include font (20px, 700, 1.15, 0.03em);
     }
   }
   

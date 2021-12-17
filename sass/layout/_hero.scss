@@ -43,16 +43,14 @@ background-image: linear-gradient(rgba($secondary-color, 0.4),
 }
 
 .hero__title {
+  @include font (26px, 900, 1.62, 0.06em);
   font-size: 26px;
   line-height: 1.62;
   max-width: 360px;
 @media screen and (min-width:$desktop) {
-  font-size: 44px;
-  line-height: 1.36;
+  @include font (44px, 900, 1.36, 0.06em);
   max-width: 696px;
 }
   margin: 0 auto 30px;
   color: $primary-color;
-  font-weight: 900;
-  letter-spacing: 0.06em;
 }

@@ -27,10 +27,7 @@ flex-basis: calc((100% - 3 * 30px) / 3);
   background-color: rgba($secondary-color, 0.8);
 }
 .review__description {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.03em;
+  @include font (14px, 700, 1.14, 0.03em);
   text-transform: uppercase;
   text-align: center;
   color: $primary-color;

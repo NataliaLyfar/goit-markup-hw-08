@@ -29,12 +29,9 @@
 }
  
 .feature__subtitle {
+  @include font (14px, 700, 1.14, 0.03em);
   margin-bottom: 10px;
   color: $tertiary-text-color;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
   @media screen and (min-width:$tablet) {
@@ -43,7 +40,5 @@
 }
 
 .feature__text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font (14px, 400, 1.71, 0.03em);
 }

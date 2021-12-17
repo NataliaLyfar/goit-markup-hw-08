@@ -5,15 +5,12 @@
   }
   }
 .section__title {
+  @include font (28px, 700, 1.17, 0.03em);
   color: $tertiary-text-color;
   margin-bottom: 30px;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   text-align: center;
   @media screen and (min-width:$desktop) {
-  font-size: 36px;
+  @include font (36px, 700, 1.17, 0.03em);
   margin-bottom: 50px;
 }
 }
